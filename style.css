@@ -8,11 +8,18 @@ img{
    
 }
 section{
-    padding: 1.5em;
+    margin: 1.5em;
 }
 p{
     font-family: 'Geologica', sans-serif;
-}
+    font-size:1em;
+} 
+    
 h2{
     font-family: 'Geologica', sans-serif;
+    font-size: 1.5em;
+}
+.zelene-pozadi{
+    background-color: #C2A83E;
+    padding: 3em;
 }
