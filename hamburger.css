@@ -1,0 +1,137 @@
+:root {
+ --cihlova:#A44A3F;
+
+}
+.hamburger {
+  --rotate-time: 0.15s;
+  --move-time: 0.1s;
+  display: block;
+  width: 60px;
+  height: 45px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.hamburger span {
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #000000;
+  
+  left: 0;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0px;
+  transition: 1s;
+}
+
+.hamburger span:nth-child(2) {
+  top: 18px;
+  transition: 1s;
+}
+
+.hamburger span:nth-child(3) {
+  bottom: 0px;
+  transition: 1s;
+}
+
+.hamburger-nav {
+  transform: scaleY(0);
+  transition: 1s;
+  transform-origin: top;
+  position: absolute;
+  background-color: var(--cihlova);
+  padding-top: 5em;
+}
+.nav-menu {
+  padding: 0;
+  margin: 0;
+}
+.hamburger-row {
+  padding: 1.5em;
+}
+
+.hamburger-nav ul {
+  margin: 0;
+  padding: 0;
+}
+.hamburger-nav li {
+  display: block;
+  background-color: var(--cihlova);
+}
+
+.nav-menu > li > a {
+  font-size: 17px;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 829px) {
+  .hamburger-nav.active {
+    transform: scaleY(1);
+    
+  }
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(18px) rotate(45deg);
+  }
+  .hamburger.active span:nth-child(2) {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-18px) rotate(-45deg);
+  }
+  .hamburger-nav {
+    width: 100%;
+    
+    position: absolute;
+    right: 0;
+  }
+
+ 
+  .nav-menu > li {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    
+  }
+  .li-cara {
+    display: block;
+    border-top: 2px solid white;
+    margin:  0 1em 1em 1em;
+    padding: 1em 0 0 0;
+    justify-content: end;
+  }
+ 
+  .li-cara > a{
+    text-align: end;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .hamburger-row {
+    display: none;
+  }
+
+  .hamburger-nav {
+    transform: none;
+    position: static;
+    background-color: transparent;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .nav-menu > li {
+    padding: 1em;
+    
+  }
+  .top {
+    align-items: center;
+  }
+}
