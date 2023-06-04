@@ -1,11 +1,11 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/KU8eozPI)
-# Název mého web-projektu
-Práce se zabývá vytvořením webových stránek ...
+# Klářiny webovky
+Práce se zabývá vytvořením webových stránek, které budou mít galerie s fotkami, například s fotkami z irska + tam vždycky bude nějakej text vysvětlující co jsem fotilka a proč.
 
 Nezapomenu upravit odkazy a "aktivovat" GitHub Pages... 
 [Webová stránka s ukázkovou implemetací](https://pslib-cz.github.io/<SEM_VKLADAM_NAZEV_PROJEKTU>/)
 
-[Návrh webové stránky ve Figmě](https://www.figma.com/)
+[Návrh webové stránky ve Figmě](https://www.figma.com/file/e62aIDwvaWskxB9qbeZnkv/Untitled?type=design&node-id=0%3A1&t=kMqMX6dLr9FbuBo1-1)
 
 ## ToDo
 - [x] Vytvořit repozitář projektu
