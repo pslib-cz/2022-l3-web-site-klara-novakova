@@ -1,6 +1,9 @@
 a{
     font-family: 'Geologica', sans-serif;
     text-decoration: none;
+   
+}
+.li-cara > a {
     color: white;
 }
 img{
@@ -19,9 +22,11 @@ h2{
     font-family: 'Geologica', sans-serif;
     font-size: 1.5em;
 }
-.zelene-pozadi{
+.o-autorce__zelene-pozadi{
     background-color: #C2A83E;
     padding: 3em;
+    max-width:350px ;
+    margin: 0 auto;
 }
 footer{
     background-color: #2D3C5F;
@@ -29,4 +34,22 @@ footer{
     flex-direction: column;
     align-items: center;
     padding: 2em;
+}
+h1{
+    color: black;
+}
+.top{
+    display: flex;
+    
+    justify-content: space-between;
+   
+}
+
+body{
+    font-family: 'Geologica', sans-serif;
+    margin: 0px;
+}
+.o-autorce__img{
+    max-width:350px ;
+    margin: 0 auto;
 }
