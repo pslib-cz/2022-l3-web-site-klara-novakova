@@ -8,13 +8,54 @@
     <link rel="stylesheet" href="./css/hamburger.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-
+     <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap"/>
+    <link rel="stylesheet" href="./slider.js">
     <script src="./hamburger.js"></script>
+    <script src="./slider.js"></script>
+    <section>
+     
+      
     <title>Document</title>
+    <script type="module">
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+    
+      const swiper = new Swiper('.swiper', {
+        loop: true,
+        speed: 600,
+        effect: "slide", //'slide' | 'fade' | 'cube' | 'coverflow' | 'flip' | 'cards'
+        keyboard: {
+          enabled: true,
+          onlyInViewport: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          bulletClass: "swiper-pagination-bullet dot",
+          bulletElement: "a",
+          clickable: true
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+          hideOnClick: true,
+        },
+        scrollbar: {
+          el: '.swiper-scrollbar',
+          draggable: true
+        },
+        autoplay: {
+          delay: 5000,
+        },
+        breakpointsBase: "container",
+        breakpoints: {
+          1250: {
+            slidesPerView: 2,
+            spaceBetween: 0
+          }
+        }
+      });
+      document.querySelector("#next-slide").onclick = () => swiper.slideNext();
+</script>
   </head>
   <body>
     <header>
@@ -51,7 +92,7 @@
         </p>
 
         <div class="o-autorce__zelene-pozadi">
-          <img src="/img/SAM_4204.JPG" alt="Klára na lodi" />
+          <img src="./img/SAM_4204.JPG" alt="Klára na lodi" />
         </div>
       </section>
       <section>
@@ -65,10 +106,61 @@
           vracel se slovy, že už dlouho nic takového nepoužíval.
         </p>
 
-        <img
+        <img class="na-co-fotim__fotak"
           src="./img/02f24c55ecbe33a2f8c534668e5d3677--mm2000x2000.jpg"
           alt="fotoaparát"
         />
+      </section>
+      <h2>Galerie</h2>
+      <div class="swiper">
+        <div class="slider__content swiper-wrapper">
+          <div class="slider__item swiper-slide">
+            <div class="slider-view slider-view__front" style="background-image: linear-gradient(to right bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0.5)), url(./img/SAM_4204.JPG);">
+              <div class="slider-view__description">
+                <p>IRSKO</p>
+              </div>
+            </div>
+            <div class="slider-view slider-view__back">
+             
+            </div>
+          </div>
+      
+          </div>
+        <div class="novinky swiper">
+            <div class="slider__content swiper-wrapper">
+              <div class="slider__item swiper-slide">
+                <div class="slider-view slider-view__front" style="background-image: linear-gradient(to right bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0.5)), url(./img/SAM_4204.JPG);">
+                  <div class="slider-view__description">
+                    <p>IRSKO</p>
+                  </div>
+                </div>
+                <div class="slider-view slider-view__back">
+                 
+                </div>
+              </div>
+          
+              </div>
+              <div class="slider__content swiper-wrapper">
+                <div class="slider__item swiper-slide"><a class="novinky__blok slider-view slider-view__front" href="#"><img class="uvod__novinky--img" src="./img/SAM_4204.JPG" alt="Tailor of Swaffham"></a></div>
+                <div class="slider__item swiper-slide">
+                  <div class="slider-view slider-view__front" style="background-image: linear-gradient(to right bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0.5)), url(./img/SAM_4204.JPG);">
+                    <div class="slider-view__description">
+                      <p>IRSKO</p>
+                    </div>
+                  </div>
+                  <div class="slider-view slider-view__back">
+                   
+                  </div>
+                </div>
+            
+                </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+        </div>
       </section>
     </main>
     <footer>
