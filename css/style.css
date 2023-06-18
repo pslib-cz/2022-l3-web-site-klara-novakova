@@ -9,7 +9,10 @@ body{
 a{
     font-family: 'Geologica', sans-serif;
     text-decoration: none;
-   
+   display: block;
+}
+img{
+    display: block;
 }
 
 img{
@@ -91,6 +94,16 @@ max-width: 830px;
     padding: 1.5em;
 
 }
+.fotky-rozlozeni{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin: 1.5em;
+}
+.fotka{
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    
+}
 
 @media only screen and (min-width: 750px) {
     .o-autorce__zelene-pozadi{
@@ -114,6 +127,10 @@ max-width: 830px;
       }
 footer{
     align-items: start;
+}
+.fotky-rozlozeni{
+   
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 }
