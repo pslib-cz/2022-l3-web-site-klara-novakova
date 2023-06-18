@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="./css/hamburger.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="./css/slider.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap"/>
-    <link rel="stylesheet" href="./zviratka.html">
+    <link rel="stylesheet" href="./css/slider.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    />
+    <link rel="stylesheet" href="./zviratka.html" />
     <script src="./hamburger.js"></script>
-   <scrip src="./slider.js"></scrip>
-   
-     
-      
+    <scrip src="./slider.js"></scrip>
+
     <title>Document</title>
     <script type="module">
-      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
-    
-            const swiper = new Swiper(".swiper", {
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js";
 
+      const swiper = new Swiper(".swiper", {
         loop: true,
         speed: 600,
         effect: "slide",
@@ -29,20 +29,20 @@
           enabled: true,
           onlyInViewport: false,
         },
-        
+
         autoplay: {
           delay: 2000,
         },
 
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
           hideOnClick: true,
         },
 
         pagination: {
-          el: '.swiper-pagination',
-          type: 'bullets',
+          el: ".swiper-pagination",
+          type: "bullets",
           clickable: true,
           bulletElement: "a",
           bulletClass: "swiper-pagination-bullet dot",
@@ -50,7 +50,7 @@
 
         scrollbar: {
           el: null,
-          draggable: true
+          draggable: true,
         },
       });
 
@@ -74,7 +74,7 @@
         <nav class="hamburger-nav hamburger-zone">
           <menu class="nav-menu">
             <li class="li-cara"><a href="./index.html">Úvod</a></li>
-            <li class="li-cara"><a href="#">Galerie</a></li>
+            <li class="li-cara"><a href="#galerie">Galerie</a></li>
             <li class="li-cara"><a href="#">Kontakt</a></li>
           </menu>
         </nav>
@@ -106,34 +106,77 @@
           vracel se slovy, že už dlouho nic takového nepoužíval.
         </p>
 
-        <img class="na-co-fotim__fotak"
+        <img
+          class="na-co-fotim__fotak"
           src="./img/02f24c55ecbe33a2f8c534668e5d3677--mm2000x2000.jpg"
           alt="fotoaparát"
         />
       </section>
-      <h2>Galerie</h2>
-      
-    <div class="swiper">
-       <div class="slider__content swiper-wrapper">
-        
-          <div class="slider__item swiper-slide">
-            <div class="slider__container">
-              <a class="slider-view slider-view__front" href="./zviratka.html"><img class="galerie__img" src="./img/SAM_3330.JPG" alt="Někde v lese náhled"></a>
-              <a class="slider-view slider-view__front" ><img class="galerie__img" src="./img/SAM_34422.JPG" alt="zvířátka náhled"></a>
-              <a class="slider-view slider-view__front" ><img class="galerie__img" src="./img/SAM_3541.JPG" alt="Itálie náhled"></a>
-              <a class="slider-view slider-view__front" ><img class="galerie__img" src="./img/SAM_4079.JPG" alt=" Irsko náhled"></a>
+
+      <section id="galerie">
+        <h2 class="h2-center">GALERIE</h2>
+
+        <div class="swiper">
+          <div class="slider__content swiper-wrapper">
+            <div class="slider__item swiper-slide">
+              <div class="slider__container">
+                <a class="slider-view slider-view__front"
+                  ><img
+                    class="galerie__img"
+                    src="./img/SAM_3330.JPG"
+                    alt="Někde v lese náhled"
+                /></a>
+                <a class="slider-view slider-view__front" href="./zviratka.html"
+                  ><img
+                    class="galerie__img"
+                    src="./img/SAM_34422.JPG"
+                    alt="zvířátka náhled"
+                /></a>
+                <a class="slider-view slider-view__front"
+                  ><img
+                    class="galerie__img"
+                    src="./img/SAM_3541.JPG"
+                    alt="Itálie náhled"
+                /></a>
+                <a class="slider-view slider-view__front"
+                  ><img
+                    class="galerie__img"
+                    src="./img/SAM_4079.JPG"
+                    alt=" Irsko náhled"
+                /></a>
+              </div>
             </div>
-          </div>
-         
-          <div class="slider__item swiper-slide">
-            <div class="slider__container">
-              <a class="slider-view slider-view__front" href="./zviratka.html"><img class="galerie__img" src="./img/SAM_3330.JPG" alt="Někde v lese náhled"></a>
-              <a class="slider-view slider-view__front" ><img class="galerie__img" src="./img/SAM_34422.JPG" alt="zvířátka náhled"></a>
-              <a class="slider-view slider-view__front" ><img class="galerie__img" src="./img/SAM_3541.JPG" alt="Itálie náhled"></a>
-              <a class="slider-view slider-view__front" ><img class="galerie__img" src="./img/SAM_4079.JPG" alt=" Irsko náhled"></a>
+
+            <div class="slider__item swiper-slide">
+              <div class="slider__container">
+                <a class="slider-view slider-view__front"
+                  ><img
+                    class="galerie__img"
+                    src="./img/SAM_3330.JPG"
+                    alt="Někde v lese náhled"
+                /></a>
+                <a class="slider-view slider-view__front" href="./zviratka.html"
+                  ><img
+                    class="galerie__img"
+                    src="./img/SAM_34422.JPG"
+                    alt="zvířátka náhled"
+                /></a>
+                <a class="slider-view slider-view__front"
+                  ><img
+                    class="galerie__img"
+                    src="./img/SAM_3541.JPG"
+                    alt="Itálie náhled"
+                /></a>
+                <a class="slider-view slider-view__front"
+                  ><img
+                    class="galerie__img"
+                    src="./img/SAM_4079.JPG"
+                    alt=" Irsko náhled"
+                /></a>
+              </div>
             </div>
-          </div>
-        <!--
+
+            <!--
           <div class="swiper">
        <div class="slider__content swiper-wrapper">
         
@@ -167,14 +210,12 @@
               
           </div>
         -->
-         
-          
-       </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-scrollbar"></div>
-    </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-scrollbar"></div>
+        </div>
       </section>
     </main>
     <footer>

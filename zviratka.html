@@ -10,10 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap"/>
-    
+    <link rel="stylesheet" href="./lightgall/css/lightgallery-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.5/lightgallery.es5.min.js">
     <script src="./hamburger.js"></script>
    <scrip src="./slider.js"></scrip>
-   
+   <script src="./lightgall/lightgallery.min.js"></script>
+    <script>
+        lightGallery(document.getElementById('my-gallery'), {
+            selector: '.fotka',
+        });
+    </script>
      
       
     <title>Document</title>
@@ -74,7 +80,7 @@
         <nav class="hamburger-nav hamburger-zone">
           <menu class="nav-menu">
             <li class="li-cara"><a href="./index.html">Úvod</a></li>
-            <li class="li-cara"><a href="#">Galerie</a></li>
+            <li class="li-cara"><a href="#galerie">Galerie</a></li>
             <li class="li-cara"><a href="#">Kontakt</a></li>
           </menu>
         </nav>
@@ -82,16 +88,37 @@
     </header>
     <main>
      <h2>ZVÍŘÁTKA</h2>
-     <img src="./img/zviratka/SAM_0143.JPG" alt="">
-     <img src="./img/zviratka/SAM_1370.JPG" alt="">
-     <img src="./img/zviratka/SAM_3114.JPG" alt="">
-     <img src="./img/zviratka/SAM_34422.JPG" alt="">
-     <img src="./img/zviratka/SAM_3881.JPG" alt="">
-     <img src="./img/zviratka/SAM_3925.JPG" alt="">
+     
+    <div class="fotky-rozlozeni" id="my-gallery">
+      <figure class="fotka">
+        <a href="./img/zviratka/SAM_0143.JPG"> <img class="fotka" src="./img/zviratka/SAM_0143.JPG" alt="kočka na schodech"></a>
+    </figure>
+    <figure class="fotka">
+      <a href="./img/zviratka/SAM_1370.JPG"> <img class="fotka" src="./img/zviratka/SAM_1370.JPG" alt=""></a>
+  </figure>
+  <figure class="fotka">
+    <a href="./img/zviratka/SAM_3114.JPG"> <img class="fotka" src="./img/zviratka/SAM_3114.JPG" alt=""></a>
+</figure>
+<figure class="fotka">
+  <a href="./img/zviratka/SAM_34422.JPG"> <img class="fotka" src="./img/zviratka/SAM_34422.JPG" alt=""></a>
+</figure>
+<figure class="fotka">
+  <a href="./img/zviratka/SAM_3881.JPG"> <img class="fotka" src="./img/zviratka/SAM_3881.JPG" alt=""></a>
+</figure>
+<figure class="fotka">
+  <a href="./img/zviratka/SAM_3925.JPG"> <img class="fotka" src="./img/zviratka/SAM_3925.JPG" alt=""></a>
+</figure>
+       
+      
+      
+       
+    </div>
     </main>
     <footer>
       <div><a href="#">klara.novakova.020@pslib.cz</a></div>
       <div><a href="#">@klara._novak</a></div>
     </footer>
+    
+    
   </body>
 </html>
