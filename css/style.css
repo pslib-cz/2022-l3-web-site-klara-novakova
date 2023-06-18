@@ -27,9 +27,17 @@ h2{
 }
 .o-autorce__zelene-pozadi{
     background-color: #C2A83E;
-    padding: 3em;
-    max-width:350px ;
+    padding: 3em ;
     margin: 0 auto;
+    display: flex;
+  justify-content: center;
+   
+
+}
+.o-autorce__zelene-pozadi > div{
+       max-width: 260px;
+  
+
 }
 footer{
     background-color: #2D3C5F;
@@ -40,10 +48,11 @@ footer{
 }
 h1{
     color: black;
+    
 }
 .top{
     display: flex;
-    
+    margin: 1.5em;
     justify-content: space-between;
    
 }
@@ -63,6 +72,28 @@ body{
 .h2-center{
     text-align: center;
     font-weight: bold;
-    
+
 }
 
+@media only screen and (min-width: 750px) {
+    .o-autorce__zelene-pozadi{
+     
+      justify-content: end;
+       
+    
+    }
+    .o-autorce{
+     
+        position: relative;    
+      
+      }
+      .o-autorce__text{
+        color: white;
+     padding-left: 3em;
+     padding-top: 2em;
+        position: absolute;  
+        max-width: calc(100% - 7em - 260px);  
+      
+      }
+
+}

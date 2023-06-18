@@ -1,6 +1,4 @@
 @import url(https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css);
-
-
   :root {
     --initial-clip-path: 0%;
     --swiper-theme-color: var(--primary);
